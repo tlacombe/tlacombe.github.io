@@ -14,6 +14,11 @@ def theta_init(p):
 	theta = np.random.rand(p+1)
 
 
+def init_theta(p):
+	np.random.seed(seed=42)  # DO NOT change this
+	theta = np.random.rand(p+1)
+
+
 def test_1d_logreg(grad_descent, pred, sigma):
 	np.random.seed(seed=42)
 	n = 100
