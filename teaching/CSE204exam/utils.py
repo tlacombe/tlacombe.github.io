@@ -12,11 +12,13 @@ def score(y_true, y_pred):
 def theta_init(p):
 	np.random.seed(seed=42)  # DO NOT change this
 	theta = np.random.rand(p+1)
+	return theta
 
 
 def init_theta(p):
 	np.random.seed(seed=42)  # DO NOT change this
 	theta = np.random.rand(p+1)
+	return theta
 
 
 def test_1d_logreg(grad_descent, pred, sigma):
