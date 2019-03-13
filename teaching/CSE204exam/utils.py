@@ -72,7 +72,7 @@ def test_linear_regression(linreg, E, pred):
 	print("training loss obtained:", np.round(E(X, y, theta_opt), 2))
 	z = np.linspace(0,10,100)
 	#zz = np.array([theta_opt[0] + zi * theta_opt[1] for zi in z])
-	zz = np.array([pred(zi, theta_opt) for zi in z])
+	zz = np.array(theta_opt[0] + zi * theta_opt[1] for zi in z])
 	zzz = np.array([theta[0] + zi * theta[1] for zi in z])
 	plt.scatter(x,y, color="blue")
 	plt.plot(z, zz, color="red", label="your fit")
