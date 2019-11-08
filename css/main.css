@@ -13,7 +13,8 @@ nav ul, footer ul {
 }
 nav ul li, footer ul li {
     display: inline;
-    margin-right: 40px; /* largeur inter section */
+    margin-left: 20px;
+    margin-right: 20px; /* largeur inter section */
 }
 
 a { /* Color of href */
