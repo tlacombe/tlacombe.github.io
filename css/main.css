@@ -25,13 +25,14 @@ a:hover {
     text-decoration: underline;
 }
 h1 {
-    font-size: 3em;
+    font-size: 2em;
     font-family:'Serif', 'Helvetica', 'Arial', 'Sans-Serif';
     color: #4475A6;
 }
 h1.title {
     text-align: center;
 }
+
 h2 {
     color:#0C3D6F;
 }
