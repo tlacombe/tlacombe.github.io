@@ -1,6 +1,9 @@
 body {
     margin: 60px auto;
-    width: 70%;
+    width: 65%;
+    font:'Calibri', 'Ubuntu', 'Arial', 'Calibri';
+    font-size:22px;
+    background-color: #fff;
 }
 nav ul, footer ul {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
@@ -10,8 +13,9 @@ nav ul, footer ul {
 }
 nav ul li, footer ul li {
     display: inline;
-    margin-right: 20px;
+    margin-right: 40px; /* largeur inter section */
 }
+
 a { /* Color of href */
     text-decoration: none;
     color: #159;
@@ -21,15 +25,25 @@ a:hover {
 }
 h1 {
     font-size: 3em;
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    font-family:'Serif', 'Helvetica', 'Arial', 'Sans-Serif';
+    color: #4475A6;
+}
+h1.title {
+    text-align: center;
+}
+h2 {
+    color:#0C3D6F;
 }
 p {
     font-size: 1em;
     line-height: 1.4em;
     color: #333;
 }
+p.subtitle {
+    color:#9EADBC;
+    text-align: center;
+}
 footer {
-    border-top: 1px solid #d5d5d5;
     font-size: .8em;
 }
 
