@@ -62,17 +62,18 @@ ul.posts li {
 ol.publi {
     list-style: none;
     counter-reset: roman;
-    margin-left: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
     /* position: relative; */
 }
 
-ol.publi > li:after {
+ol.publi > li:after {/* Trick to plot lines after list elem */
     content: "";
     display: block;
     height: 1px;
-    width: 80%;
-    margin: 10px;
-/*    margin-left: 20%; */
+    /*width: 80%;*/
+    margin: 20px;
+    /*margin-left: 20%; */
     background: grey;
 }
 
