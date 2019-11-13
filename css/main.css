@@ -67,7 +67,7 @@ ol.publi {
     /* position: relative; */
 }
 
-ol.publi > li:after {/* Trick to plot lines after list elem */
+ol.publi > li:not(.last):after {/* Trick to plot lines after list elem */
     content: "";
     display: block;
     height: 1px;
