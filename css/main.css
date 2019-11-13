@@ -45,6 +45,7 @@ p.subtitle {
     color:#9EADBC;
     text-align: center;
 }
+
 footer {
     font-size: .8em;
 }
@@ -56,4 +57,25 @@ ul.posts {
 
 ul.posts li {
     list-style: none;
+}
+/* not in use for now */
+ol.publi {
+    list-style: none;
+    counter-reset: roman;
+    /* position: relative; */
+}
+
+ol.publi > li:after {
+    content: "";
+    display: block;
+    height: 1px;
+    width: 60%;
+    margin: 10px;
+    margin-left: 20%;
+    background: blue;
+}
+
+ol.publi > li.before {
+    counter-increment: roman;
+    content:"["counter(roman, roman)"] ";
 }
